@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.todos-box::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.todos-box::-webkit-scrollbar-track {
+  background: #ddd; /* color of the tracking area */
+}
+
+.todos-box::-webkit-scrollbar-thumb {
+  background-color: rgb(131, 131, 131); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #ddd; /* creates padding around scroll thumb */
+}
+
+.todos-container {
+  background: #ddd;
+  padding: 10px 15px;
+  min-height: 300px;
+  border-radius: 5px;
+}
+.inner-container {
+  width: 280px;
+  display: flex;
+  margin-bottom: 15px;
+}
+.input-box {
+  height: 70px;
+}
+.input-box > input {
+  display: block;
+  width: 220px;
+  height: 40px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: none;
+  margin: 2px;
+}
+.input-box > input:focus {
+  outline: 1px solid rgb(63, 62, 62);
+}
+.inner-container > button {
+  height: 86px;
+  width: 60px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 3px;
+  cursor: pointer;
+  color: rgb(68, 68, 68);
+}
+.todos-box {
+  max-height: 230px;
+  overflow-y: auto;
+}
